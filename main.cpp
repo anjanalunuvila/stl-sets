@@ -11,7 +11,7 @@ int main()
     Info rst5("rst1", "rstObj2", 1);
     Info rst6("rst2", "rstObj2", 1);
 
-    std::set<Info,InfoCmp> resetSet;
+    std::set<Info,InfoCmp2> resetSet;
 
     resetSet.insert(rst1);
     resetSet.insert(rst2);

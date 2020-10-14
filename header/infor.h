@@ -32,6 +32,15 @@ class Info
         int domain;
 };
 
+struct InfoCmp0 {
+    bool operator() (const Info &lhs, const Info &rhs) const {
+        if(lhs.getName() < rhs.getName() || lhs.getObjName() < rhs.getObjName() || lhs.getDomain() < rhs.getDomain()){
+            return true;
+        }
+        return false;
+        }
+    };
+
 struct InfoCmp {
     bool operator() (const Info &lhs, const Info &rhs) const {
         if((lhs.getName() < rhs.getName())

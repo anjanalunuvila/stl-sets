@@ -19,13 +19,13 @@ int main()
     resetSet.insert(rst4);
     resetSet.insert(rst5);
     resetSet.insert(rst6);
-
     resetSet.insert(rst1);
     resetSet.insert(rst2);
     resetSet.insert(rst3);
     resetSet.insert(rst4);
     resetSet.insert(rst5);
     resetSet.insert(rst6);
+
 
 
     for (auto& info: resetSet) {

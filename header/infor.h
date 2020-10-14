@@ -32,7 +32,9 @@ class Info
 
 struct InfoCmp {
     bool operator() (const Info &lhs, const Info &rhs) const {
-        if((lhs.getName() < rhs.getName()) || (lhs.getObjName() < rhs.getObjName()) || (lhs.getDomain() < rhs.getDomain()) ){
+        if((lhs.getName() < rhs.getName())
+           || ( (lhs.getName() == rhs.getName()) && (lhs.getObjName() < rhs.getObjName()) )
+           || ( (lhs.getName() == rhs.getName()) && (lhs.getObjName() == rhs.getObjName()) && (lhs.getDomain() < rhs.getDomain()) )){
             return true;
             }
         return false;
